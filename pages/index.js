@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import { useRouter } from "next/dist/client/router";
 import Head from "next/head";
 import { getStates } from "../store/posts/actions";
-import { SHRINE_ITEM_SAVE, STATE_ITEM_SAVE } from "../store/posts/types";
+import { STATE_ITEM_SAVE } from "../store/posts/types";
 import Title from "../components/Title";
 const Index = () => {
   const { states, isError, loading } = useSelector((state) => state.states);
@@ -25,6 +25,12 @@ const Index = () => {
   if (isError) return <h1>Oops, something went wrong</h1>;
   return (
     <div className="container">
+      <Head>
+        <meta name="description" content="O'zbekistondagi qolaversa butun dunyodagi qadamjolar, ziyoratgohlar, oromgohlar, sayilgohlar haqida ma'lumot yetkazib beruvchi sayt"/>
+        <meta name="keywords" content="Yangiliklar,хабарлар,ziyoratgoh,Dunyo manzaralari,фото ва видео материаллар,qadamjolar,sayilgohlar "/>
+        <meta property="og:title" content="Eng qiziqarli yangiliklar"/>
+        <meta property="og:description" content="Eng diqqatga sazovor joylar haqida ma'lumotni faqat bizda topasiz"/>
+      </Head>
       <div className="links">
           <span>Home</span>
       </div>

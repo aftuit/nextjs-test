@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import { SUCCESS_REGION, ERROR_REGION, START_REGION, STATE_ITEM_SAVE, REGION_ITEM_SAVE } from '../../store/posts/types'
 import axios from 'axios';
 import Link from 'next/link';
+import Head from 'next/head';
 import Title from '../../components/Title';
 const State = () => {
   const { regions, regionsError, regionsLoading } = useSelector(state => state.states);
@@ -39,7 +40,12 @@ const State = () => {
           <Link href="/"><a>Home</a></Link> /
           <span>{state.name}</span>
       </div>
-
+      <Head>
+        <meta name="description" content="O'zbekistondagi qolaversa butun dunyodagi qadamjolar, ziyoratgohlar, oromgohlar, sayilgohlar haqida ma'lumot yetkazib beruvchi sayt"/>
+        <meta name="keywords" content="Yangiliklar,хабарлар,ziyoratgoh,Dunyo manzaralari,фото ва видео материаллар,qadamjolar,sayilgohlar "/>
+        <meta property="og:title" content="Eng qiziqarli yangiliklar"/>
+        <meta property="og:description" content="Eng diqqatga sazovor joylar haqida ma'lumotni faqat bizda topasiz"/>
+      </Head>
       <Title title={"Viloyatlar"} />
       {
         !state ?
