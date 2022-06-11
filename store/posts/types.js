@@ -1,0 +1,12 @@
+export const SUCCESS_STATE = "SUCCESS/STATE";
+export const ERROR_STATE = "ERROR/STATE";
+export const START_STATE = "START/STATE";
+export const SUCCESS_REGION = "SUCCESS/REGION";
+export const ERROR_REGION = "ERROR/REGION";
+export const START_REGION = "START/REGION";
+export const SUCCESS_SHRINE = "SUCCESS/SHRINE";
+export const ERROR_SHRINE = "ERROR/SHRINE";
+export const START_SHRINE = "START/SHRINE";
+export const STATE_ITEM_SAVE = "STATE/ITEM/SAVE";
+export const REGION_ITEM_SAVE = "REGION/ITEM/SAVE";
+export const SHRINE_ITEM_SAVE = "SHRINE/ITEM/SAVE";
