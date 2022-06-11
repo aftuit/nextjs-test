@@ -41,6 +41,7 @@ const District = () => {
         <meta name="keywords" content="Yangiliklar,хабарлар,ziyoratgoh,Dunyo manzaralari,фото ва видео материаллар,qadamjolar,sayilgohlar " />
         <meta property="og:title" content="Eng qiziqarli yangiliklar" />
         <meta property="og:description" content="Eng diqqatga sazovor joylar haqida ma'lumotni faqat bizda topasiz" />
+        <title>{region.name}</title>
       </Head>
       <div className="links">
         <Link href="/"><a>Home</a></Link> /
